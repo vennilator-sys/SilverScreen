@@ -73,7 +73,35 @@ let player = {
     discipline:
         randomStat(),
 
+    
+    actingTalent:
+        randomStat(),
 
+    
+    directingTalent:
+        randomStat(),
+
+    
+    writingTalent:
+        randomStat(),
+
+    
+    confidence:
+        randomStat(),
+
+    
+    technology:
+        randomStat(),
+
+    
+    networking:
+        randomStat(),
+
+    
+    schoolPerformance:
+        randomStat(),
+
+    
     history:[]
 
 };
@@ -184,11 +212,30 @@ ${statBar("Creativity",player.creativity)}
 
 ${statBar("Discipline",player.discipline)}
 
+<h3>Hollywood Potential</h3>
 
+${statBar("Acting Talent",player.actingTalent)}
+
+${statBar("Directing Talent",player.directingTalent)}
+
+${statBar("Writing Talent",player.writingTalent)}
+
+
+<h3>Personality</h3>
+
+${statBar("Confidence",player.confidence)}
+
+${statBar("Networking",player.networking)}
 
 <button onclick="ageUp()">
 
 Age Up
+
+</button>
+
+<button onclick="chooseActivity()">
+
+Activities
 
 </button>
 
@@ -228,6 +275,24 @@ ${e}
 
 
 `;
+
+}
+
+function chooseActivity(){
+
+let choice =
+prompt(
+"Choose activity:\n\nDrama Club\nSports\nAcademic Club\nGaming"
+);
+
+
+if(choice){
+
+doActivity(player, choice);
+
+render();
+
+}
 
 }
 
