@@ -95,18 +95,18 @@ function ageUp(){
 
 
     let event =
-        events[Math.floor(Math.random()*events.length)];
-
-
+    generateChildhoodEvent(player);
+    
+    
+    if(event){
+    
+    event.effect(player);
+    
+    
     player.history.unshift(
-        `Age ${player.age}: ${event}`
+    `Age ${player.age}: ${event.text}`
     );
-
-
-    if(player.age % 5 === 0){
-
-        player.money += 1000;
-
+    
     }
 
 
