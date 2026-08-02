@@ -1,7 +1,7 @@
 // SilverScreen v0.01
 // Core Life Engine
 
-const family = {};be
+const family = {};
 
 const names = [
     "Ethan Williams",
