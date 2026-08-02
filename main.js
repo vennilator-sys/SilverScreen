@@ -34,7 +34,9 @@ const events = [
 ];
 
 
-let player = new Person();
+GameState.player = new Person();
+
+const player = GameState.player;
 
 
 
