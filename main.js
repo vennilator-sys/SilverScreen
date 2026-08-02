@@ -34,77 +34,7 @@ const events = [
 ];
 
 
-let player = {
-
-
-    name:
-        names[Math.floor(Math.random()*names.length)],
-
-
-    age:0,
-
-
-    location:
-        locations[Math.floor(Math.random()*locations.length)],
-
-
-    money:5000,
-
-
-    health:100,
-
-
-    looks:
-        randomStat(),
-
-
-    intelligence:
-        randomStat(),
-
-
-    charisma:
-        randomStat(),
-
-
-    creativity:
-        randomStat(),
-
-
-    discipline:
-        randomStat(),
-
-    
-    actingTalent:
-        randomStat(),
-
-    
-    directingTalent:
-        randomStat(),
-
-    
-    writingTalent:
-        randomStat(),
-
-    
-    confidence:
-        randomStat(),
-
-    
-    technology:
-        randomStat(),
-
-    
-    networking:
-        randomStat(),
-
-    
-    schoolPerformance:
-        randomStat(),
-
-    
-    history:[]
-
-};
+let player = new Person();
 
 
 
