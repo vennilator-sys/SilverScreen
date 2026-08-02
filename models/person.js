@@ -1,10 +1,17 @@
 class Person {
 
-    constructor(){
+    constructor(name = generateName()) {
 
-        this.name = generateName();
+        this.name = name;
 
         this.age = 0;
+
+        this.location =
+            locations[Math.floor(Math.random() * locations.length)];
+
+        this.money = 5000;
+
+        this.health = 100;
 
         this.looks = randomStat();
 
@@ -22,8 +29,13 @@ class Person {
 
         this.writingTalent = randomStat();
 
+        this.confidence = randomStat();
+
         this.networking = randomStat();
 
+        this.history = [];
+
+        this.family = {};
     }
 
 }
