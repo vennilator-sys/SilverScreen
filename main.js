@@ -71,7 +71,7 @@ function ageUp(){
 
 
     
-    render();
+    Renderer.render();
 
 }
 
@@ -111,7 +111,7 @@ if(choice){
 
 doActivity(player, choice);
 
-render();
+Renderer.render();
 
 }
 
@@ -120,4 +120,4 @@ render();
 player.family =
 createFamily(player.name);
 
-render();
+Renderer.render();
