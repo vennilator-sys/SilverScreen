@@ -109,7 +109,7 @@ const Renderer = {
     
     },
 
-    function statBar(name,value){
+    statBar(name,value){
     
     
         return `
