@@ -1,6 +1,7 @@
 // SilverScreen v0.01
 // Core Life Engine
 
+const family = {};be
 
 const names = [
     "Ethan Williams",
@@ -109,6 +110,7 @@ function ageUp(){
     }
 
 
+    
     render();
 
 }
@@ -229,6 +231,7 @@ ${e}
 
 }
 
-
+player.family =
+createFamily(player.name);
 
 render();
