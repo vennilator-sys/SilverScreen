@@ -110,3 +110,24 @@ const Renderer = {
     }
 
 };
+
+function statBar(name,value){
+
+
+return `
+
+<div class="stat">
+
+<strong>${name}: ${value}%</strong>
+
+<div class="bar">
+
+<div class="fill" style="width:${value}%"></div>
+
+</div>
+
+</div>
+
+`;
+
+}
