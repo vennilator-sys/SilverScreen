@@ -1,6 +1,6 @@
 const Renderer = {
 
-    function render(){
+    render(){
     
     
         const game=document.getElementById("game");
@@ -33,30 +33,30 @@ const Renderer = {
         <h3>Attributes</h3>
         
         
-        ${statBar("Looks",player.looks)}
+        ${this.statBar("Looks",player.looks)}
         
-        ${statBar("Intelligence",player.intelligence)}
+        ${this.statBar("Intelligence",player.intelligence)}
         
-        ${statBar("Charisma",player.charisma)}
+        ${this.statBar("Charisma",player.charisma)}
         
-        ${statBar("Creativity",player.creativity)}
+        ${this.statBar("Creativity",player.creativity)}
         
-        ${statBar("Discipline",player.discipline)}
+        ${this.statBar("Discipline",player.discipline)}
         
         <h3>Hollywood Potential</h3>
         
-        ${statBar("Acting Talent",player.actingTalent)}
+        ${this.statBar("Acting Talent",player.actingTalent)}
         
-        ${statBar("Directing Talent",player.directingTalent)}
+        ${this.statBar("Directing Talent",player.directingTalent)}
         
-        ${statBar("Writing Talent",player.writingTalent)}
+        ${this.statBar("Writing Talent",player.writingTalent)}
         
         
         <h3>Personality</h3>
         
-        ${statBar("Confidence",player.confidence)}
+        ${this.statBar("Confidence",player.confidence)}
         
-        ${statBar("Networking",player.networking)}
+        ${this.statBar("Networking",player.networking)}
         
         <button onclick="ageUp()">
         
@@ -107,27 +107,29 @@ const Renderer = {
         
         `;
     
-    }
+    },
+
+    function statBar(name,value){
+    
+    
+        return `
+    
+<div class="stat">
+    
+<strong>${name}: ${value}%</strong>
+    
+<div class="bar">
+    
+<div class="fill" style="width:${value}%"></div>
+    
+</div>
+    
+</div>
+    
+`;
+    
+}
+
 
 };
 
-function statBar(name,value){
-
-
-return `
-
-<div class="stat">
-
-<strong>${name}: ${value}%</strong>
-
-<div class="bar">
-
-<div class="fill" style="width:${value}%"></div>
-
-</div>
-
-</div>
-
-`;
-
-}
