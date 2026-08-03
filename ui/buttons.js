@@ -15,3 +15,5 @@ Renderer.render();
 }
 
 }
+
+window.chooseActivity = chooseActivity;
