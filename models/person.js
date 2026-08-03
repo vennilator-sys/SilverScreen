@@ -11,6 +11,18 @@ class Person {
 
         this.money = 5000;
 
+        this.education = {
+
+            grade: null,
+        
+            gpa: null,
+        
+            club: null,
+        
+            graduated: false
+        
+        };
+
         this.health = 100;
 
         this.looks = randomStat();
