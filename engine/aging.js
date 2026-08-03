@@ -1,26 +1,15 @@
-function ageUp(){
-
-
+window.ageUp = function() {
     player.age++;
 
-
-    let event =
-    generateChildhoodEvent(player);
+    let event = generateChildhoodEvent(player);
     
-    
-    if(event){
-    
-    event.effect(player);
-    
-    
-    player.history.unshift(
-    `Age ${player.age}: ${event.text}`
-    );
-    
+    if (event) {
+        event.effect(player);
+        
+        player.history.unshift(
+            `Age ${player.age}: ${event.text}`
+        );
     }
 
-
-    
     Renderer.render();
-
-}
+};
