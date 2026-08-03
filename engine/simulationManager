@@ -1,0 +1,23 @@
+const SimulationManager = {
+
+    simulateYear() {
+
+        const player = GameState.player;
+
+        const results = [];
+
+        // Age
+        player.age++;
+
+        // Future systems
+        // School
+        // Career
+        // Relationships
+        // Health
+        // Events
+
+        Renderer.render();
+
+    }
+
+};
