@@ -6,6 +6,8 @@ const SimulationManager = {
 
         player.age++;
 
+        const schoolResult = School.advanceYear(player);
+
         let event = generateChildhoodEvent(player);
 
         if(event){
