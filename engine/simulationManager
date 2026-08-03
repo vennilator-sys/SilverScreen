@@ -4,18 +4,6 @@ const SimulationManager = {
 
         const player = GameState.player;
 
-        // Increase age
-        player.age++;
-
-        // Placeholder for future systems
-        // School
-        // Relationships
-        // Career
-        // Health
-        // Events
-
-        Renderer.render();
-
     }
 
 };
