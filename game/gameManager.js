@@ -19,17 +19,3 @@ const GameManager = {
     
 
 };
-
-window.ageUp = function() {
-    // Your age up logic here
-    console.log("Age up clicked!");
-    
-    // Example: increase age and re-render
-    player.age += 1;
-    Renderer.render();
-};
-
-window.chooseActivity = function() {
-    // Your activities menu logic here
-    console.log("Activities clicked!");
-};
