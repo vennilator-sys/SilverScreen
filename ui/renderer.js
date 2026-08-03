@@ -28,7 +28,18 @@ const Renderer = {
         <p>
         💰 Money: $${player.money.toLocaleString()}
         </p>
+
+        ${player.education.grade ? `
+        <p>
+        🎓 ${player.education.grade}
+        </p>
+        ` : ""}
         
+        ${player.education.gpa !== null ? `
+        <p>
+        📚 GPA: ${player.education.gpa.toFixed(2)}
+        </p>
+        ` : ""}
         
         <h3>Attributes</h3>
         
