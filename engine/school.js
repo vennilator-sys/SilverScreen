@@ -19,6 +19,8 @@ const School = {
 
         player.education.grade = this.getGrade(player.age);
 
+        console.log(player.education);
+
         if(player.education.gpa === null){
 
             player.education.gpa = 4.0;
