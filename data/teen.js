@@ -122,6 +122,15 @@ const teenEvents = [
         }
     },
 
+  
+    {
+    text: "You became close friends with someone at school.",
+    effect(player) {
+
+        RelationshipManager.createFriend(player);
+
+        }
+    }
 
     {
         text: "You lost motivation for a while and stopped practicing your craft.",
