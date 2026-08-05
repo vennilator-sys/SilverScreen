@@ -20,7 +20,7 @@ const SimulationManager = {
         
         } else {
         
-            event = generateTeenEvent();
+            event = generateTeenEvent(player);
         
         }
 
