@@ -48,6 +48,16 @@ class Person {
         this.history = [];
 
         this.family = {};
+
+        this.relationships = {
+
+            friends: [],
+        
+            rivals: [],
+        
+            partner: null
+
+        };
     }
 
 }
