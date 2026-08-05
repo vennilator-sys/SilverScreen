@@ -12,7 +12,17 @@ const SimulationManager = {
             School.advanceYear(player)
         );
 
-        let event = generateChildhoodEvent(player);
+        let event;
+
+        if (player.age <= 12) {
+        
+            event = generateChildhoodEvent(player);
+        
+        } else {
+        
+            event = generateTeenEvent();
+        
+        }
 
         if(event){
 
