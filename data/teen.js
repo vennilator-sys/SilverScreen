@@ -132,15 +132,14 @@ const teenEvents = [
         }
     }
 
-    {
-        text: "You lost motivation for a while and stopped practicing your craft.",
-        effect(player) {
+    text: "You lost motivation for a while and stopped practicing your craft.",
+    effect(player) {
 
-            player.discipline =
-                Math.max(0, player.discipline - 3);
+        player.discipline =
+            Math.max(0, player.discipline - 3);
 
-            player.actingTalent =
-                Math.max(0, player.actingTalent - 1);
+        player.actingTalent =
+            Math.max(0, player.actingTalent - 1);
 
         }
     }
